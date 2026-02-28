@@ -1,7 +1,7 @@
 ---
 name: notepad
 description: Opens a notepad.md notepad in a vertical iTerm2 split for the current project.
-version: 1.2.0
+version: 1.3.0
 ---
 
 # Notepad
@@ -32,6 +32,6 @@ Open a vertical split in iTerm2 and launch vim with the `notepad.md` file for th
 3. Delete any stale swap file: `rm -f "$PROJECT_DIR/.notepad.md.swp"`
 4. Run: `it2 session split --vertical`
 5. Capture the new pane ID from the output.
-6. Run: `it2 session send -s <pane-id> "vim $PROJECT_DIR/notepad.md"` — send the command text, then send a newline separately.
+6. Run: `it2 session run -s <pane-id> "vim $PROJECT_DIR/notepad.md"` — `run` sends the command and executes it automatically (no need to send a separate newline).
 
 Use the Bash tool for all commands sequentially.
