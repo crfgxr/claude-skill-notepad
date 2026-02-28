@@ -2,6 +2,8 @@
 
 A [Claude Code](https://claude.ai/claude-code) skill that opens a `notepad.md` file in a vertical iTerm2 split for your current project — instantly, without leaving your workflow.
 
+![claude-skill-notepad screenshot](screenshot.png)
+
 ## What it does
 
 Type `/notepad` in Claude Code and it will:
