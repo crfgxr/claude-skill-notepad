@@ -28,9 +28,13 @@ Open iTerm2 and go to:
 pip install it2
 ```
 
-### 4. Install the skill
+### 4. Install the skills
 ```bash
+# nano version (default)
 git clone https://github.com/crfgxr/claude-skill-notepad.git ~/.claude/skills/notepad
+
+# vim version (optional)
+cp -r ~/.claude/skills/notepad/notepad-vim ~/.claude/skills/notepad-vim
 ```
 
 ### 5. Restart Claude Code
