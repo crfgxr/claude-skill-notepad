@@ -1,7 +1,7 @@
 ---
 name: notepad
 description: Opens a notepad.md notepad in a vertical iTerm2 split for the current project.
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Notepad
@@ -11,23 +11,24 @@ Open a vertical split in iTerm2 and launch vim with the `notepad.md` file for th
 ## Steps
 
 1. Run `pwd` via Bash to get the current project directory. Store it as `$PROJECT_DIR`.
-2. Check if `$PROJECT_DIR/notepad.md` exists.
-   - If it does **not** exist, create it with the following template using the Write tool:
-     ```
-     # Notepad
+2. Run the following bash command to create `notepad.md` with the template if it does not exist:
+   ```bash
+   [ ! -f "$PROJECT_DIR/notepad.md" ] && cat > "$PROJECT_DIR/notepad.md" << 'EOF'
+   # Notepad
 
-     ## Goal
-     <!-- What are we trying to achieve? -->
+   ## Goal
+   <!-- What are we trying to achieve? -->
 
-     ## Tasks
-     - [ ]
+   ## Tasks
+   - [ ]
 
-     ## Notes
+   ## Notes
 
-     ## Blockers
+   ## Blockers
 
-     ## Links
-     ```
+   ## Links
+   EOF
+   ```
 3. Delete any stale swap file: `rm -f "$PROJECT_DIR/.notepad.md.swp"`
 4. Run: `it2 session split --vertical`
 5. Capture the new pane ID from the output.
