@@ -10,7 +10,7 @@ Type `/notepad` in Claude Code and it will:
 
 1. Create `notepad.md` in your project folder (first time only) with a ready-to-use template
 2. Split your iTerm2 window vertically
-3. Open the file in vim on the right pane
+3. Open the file in your editor of choice on the right pane
 
 Next time you type `/notepad`, it just opens the existing file.
 
@@ -39,7 +39,8 @@ Start a new Claude Code session. That's it.
 ## Usage
 
 ```
-/notepad
+/notepad        # opens with nano (default, beginner-friendly)
+/notepad vim    # opens with vim
 ```
 
 To switch between panes: **⌘[** / **⌘]** or **⌘⌥←** / **⌘⌥→**
