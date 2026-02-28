@@ -13,9 +13,10 @@ The file is always opened in your **current project directory**, so it works acr
 
 ## Requirements
 
-- [Claude Code](https://claude.ai/claude-code) CLI
+- [Claude Code](https://claude.ai/claude-code) CLI — must be run from within an iTerm2 terminal
 - [iTerm2](https://iterm2.com/)
-- **iTerm2 Shell Integration** — provides the `it2` command required for splitting panes (`iTerm2 menu → Install Shell Integration`)
+- **it2 CLI** (`pip install it2`) — Python CLI for controlling iTerm2
+- **iTerm2 Python API enabled** — `iTerm2 → Preferences → General → Magic → Enable Python API`
 
 ## Install
 
