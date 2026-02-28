@@ -19,11 +19,8 @@ The file is always opened in your **current project directory**, so it works acr
 
 ## Install
 
-Copy the `SKILL.md` file into your Claude skills directory:
-
 ```bash
-mkdir -p ~/.claude/skills/notepad
-cp SKILL.md ~/.claude/skills/notepad/SKILL.md
+git clone https://github.com/crfgxr/claude-skill-notepad.git ~/.claude/skills/notepad
 ```
 
 That's it. Restart Claude Code (or start a new session) and type `/notepad`.
