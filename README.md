@@ -39,8 +39,8 @@ Start a new Claude Code session. That's it.
 ## Usage
 
 ```
-/notepad        # opens with nano (default, beginner-friendly)
-/notepad vim    # opens with vim
+/notepad        # opens with nano (beginner-friendly)
+/notepad-vim    # opens with vim
 ```
 
 To switch between panes: **⌘[** / **⌘]** or **⌘⌥←** / **⌘⌥→**

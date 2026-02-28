@@ -1,12 +1,12 @@
 ---
-name: notepad
-description: Opens a notepad.md notepad in a vertical iTerm2 split using nano for the current project.
-version: 1.5.0
+name: notepad-vim
+description: Opens a notepad.md notepad in a vertical iTerm2 split using vim for the current project.
+version: 1.0.0
 ---
 
-# Notepad
+# Notepad (vim)
 
-Open a vertical split in iTerm2 and launch nano with the `notepad.md` file for the current project directory. If `notepad.md` does not exist, create it with a default template first.
+Open a vertical split in iTerm2 and launch vim with the `notepad.md` file for the current project directory. If `notepad.md` does not exist, create it with a default template first.
 
 ## Steps
 
@@ -32,6 +32,6 @@ Open a vertical split in iTerm2 and launch nano with the `notepad.md` file for t
 3. Delete any stale swap file: `rm -f "$PROJECT_DIR/.notepad.md.swp"`
 4. Run: `it2 session split --vertical`
 5. Capture the new pane ID from the output.
-6. Run: `it2 session run -s <pane-id> "nano $PROJECT_DIR/notepad.md"`
+6. Run: `it2 session run -s <pane-id> "vim $PROJECT_DIR/notepad.md"`
 
 Use the Bash tool for all commands sequentially.
